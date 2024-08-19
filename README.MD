@@ -3,12 +3,6 @@
 
 Este é um projeto de boilerplate para Node.js utilizando Fastify com TypeScript. Ele inclui um servidor básico com rotas configuradas para retornar dados de equipes e pilotos de Fórmula 1. Além disso, está configurado para suportar o CORS e inclui scripts para desenvolvimento e build.
 
-## Author NODE BOILERPLATE - BLUE EDITION
-
-| [<img src="https://avatars3.githubusercontent.com/u/37452836?s=96&v=4"><br><sub>Felipe Aguiar</sub>](https://github.com/felipeAguiarCode) |
-| :---------------------------------------------------------------------------------------------------------------------------------------: |
-|                                            [Linkedin](www.linkedin.com/in/felipe-aguiar-exe/)                                             |
-
 
 ## 🚀 Começando
 
@@ -109,22 +103,13 @@ server.register(cors, {
 });
 ```
 
-## 📜 Licença
-
-Este projeto está licenciado sob a licença ISC.
-
 
 # Credits
 
-icons by [Pino Lamanna][dribble-icon]
+## Author NODE BOILERPLATE - BLUE EDITION
 
-[typescript]: https://www.typescriptlang.org/
-[typescript-5-4]: https://www.typescriptlang.org/
-[ts-badge]: https://img.shields.io/badge/TypeScript-5.4-blue.svg
-[nodejs-badge]: https://img.shields.io/badge/Node.js->=%2020.00-blue.svg
-[nodejs]: https://nodejs.org/
-[dribble-icon]: https://dribbble.com/Schakalwal
-[typescript-npm]: https://www.npmjs.com/package/typescript
-[tsx-npm]: https://www.npmjs.com/package/tsx
-[tsup-npm]: https://www.npmjs.com/package/tsup
-[@types/node-npm]: https://www.npmjs.com/package/@types/node
+| [<img src="https://avatars3.githubusercontent.com/u/37452836?s=96&v=4"><br><sub>Felipe Aguiar</sub>](https://github.com/felipeAguiarCode) |
+| :---------------------------------------------------------------------------------------------------------------------------------------: |
+|                                            [Linkedin](www.linkedin.com/in/felipe-aguiar-exe/)    
+|                                      repositório https://github.com/felipeAguiarCode/node-blue-boilerplate.git
+
