@@ -1,7 +1,11 @@
 import fastify from "fastify";
-import { request } from "http";
+import cors from '@fastify/cors'
 
 const server = fastify({logger:true})
+
+server.register(cors,{
+    origin:"*"
+})
 
 const drivers =[
     {id:1,name:"Max Verstappen",team:"Red Bull Racing"},
@@ -15,16 +19,30 @@ const  teams = [
     {id:3,name:"RB"},
 ];
 
-server.get("/teams",(request,response)=>{
+server.get("/teams",async (request,response)=>{
     response.type('aplication/json').code(200)
 
     return {teams}
 });
 
-server.get("/drivers",(request,response)=>{
+server.get("/drivers",async(request,response)=>{
     response.type('aplication/json').code(200)
 
     return {drivers}
-})
+});
+
+interface DriverParams{
+    id:string
+}
+
+server.get<{Params:DriverParams}>("/drivers/:id",async(request,response)=>{
+    response.type('aplication/json').code(200)
+
+    const id = parseInt(request.params.id);
+
+    const driver = drivers.find((d)=> d.id === id);
+
+    return {driver}
+});
 
 server.listen({port:3333},()=>console.log("Server init"));
