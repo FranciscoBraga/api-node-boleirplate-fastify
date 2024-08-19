@@ -15,7 +15,7 @@ Certifique-se de ter o Node.js instalado na sua máquina. Recomenda-se a versão
 1. Clone o repositório:
 
    ```bash
-   git clone https://github.com/seu-usuario/node-blue-boilerplate.git
+   git clone https://github.com/FranciscoBraga/api-node-boleirplate-fastify.git
    ```
 
 2. Instale as dependências:
